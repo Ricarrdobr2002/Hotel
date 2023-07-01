@@ -3,7 +3,7 @@
     padding: 0%;
 }
 body{
-    background:linear-gradient(0deg,rgb(3, 3, 3)0%,rgb(16, 36, 146)100%);
+    background:linear-gradient(0deg,rgb(3, 3, 3)0%,rgb(228, 152, 12)100%);
 }
 
 /* Menu de Navegação */
@@ -15,7 +15,7 @@ nav{
     position: fixed;
     justify-content: space-between;
     align-items: center;
-    background:rgb(16, 36, 146);
+    background:rgb(228, 152, 12);
     z-index: 1;
 }
 nav ul{
@@ -153,8 +153,8 @@ width: 100%;
     margin-top: 5%;
     margin-left: 40%;
 }
-#serviços #sa:checked + #s1{
-    background-color: rgb(109, 19, 19);
+#serviços #sa:checked + #s1,#serviços #sb:checked + #s2,#serviços #sc:checked + #s3{
+    background-color: rgb(0, 0, 0);
     width: 80vw;
     scale: 1.2;
     position: absolute;
@@ -165,26 +165,8 @@ width: 100%;
 /* s2 */
 #serviços #sb:checked ~ #li2{display: block;transition: 0.5s;}
 
-#serviços #sb:checked + #s2{
-    background-color: rgb(109, 19, 19);
-    width: 80vw;
-    scale: 1.2;
-    position: absolute;
-    transition: 0.5s;
-}
-
 /* s3 */
 #serviços #sc:checked ~ #li3{display: block;transition: 0.5s;}
-
-#serviços #sc:checked + #s3{
-    background-color: rgb(109, 19, 19);
-    width: 80vw;
-    scale: 1.2;
-    position: absolute;
-    transition: 0.5s;
-}
-
-
 
 /* CONTATO */
 #contato{
