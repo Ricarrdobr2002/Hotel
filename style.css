@@ -27,7 +27,7 @@ nav ul{
     font-size: x-large;
 }
 #menu{
-    background: url(img/menu.png);
+    height: 45px;
 }
 #logo,#me{
     height: 45px;
@@ -103,7 +103,7 @@ width: 100%;
     text-align: justify;
     width: 30vw;
     padding: 1vw;
-    font-size: 1.5vw;
+    font-size: 200%;
 }
 
 /* GALERIA */
@@ -336,10 +336,11 @@ width: 100%;
         transition: 0.5s;
         width: 150px;
         padding-left: 10px;
-        background-color: #fcac26;
+        background-color: black;
         margin-top: 947px;
         padding-bottom: 100%;
     }
+    #me{background-color: rgb(255, 166, 0);}
     nav ul a{font-size: 0;transition: 0.5s;}
     nav{
         justify-content: none;
