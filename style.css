@@ -3,7 +3,9 @@
     padding: 0%;
 }
 body{
-    background:linear-gradient(0deg,rgb(3, 3, 3)0%,rgb(252, 172, 38)100%);
+    /* background:linear-gradient(0deg,rgb(3, 3, 3)0%,rgb(252, 172, 38)100%); */
+    background: url(img/bgs.jpg);
+    background-size: cover ;
 }
 
 /* Menu de Navegação */
@@ -95,6 +97,7 @@ width: 100%;
 #Sobre #bg{
     background-color: rgba(255, 255, 255, 0.356);
     margin-left: 5vw;
+    height:479px;
 }
 #Sobre p,h1{
     text-align: justify;
@@ -291,6 +294,7 @@ width: 100%;
 
     #Sobre #bg{
         margin-left: 0vw;
+        height: 150px;
     }
 
     #serviços{height:300px;padding-top: 0;padding-bottom: 0;}
