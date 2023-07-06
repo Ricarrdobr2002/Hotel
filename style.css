@@ -7,6 +7,7 @@ body{
     background: url(img/bgs.jpg);
     background-size: cover ;
 }
+svg{display: none;}
 
 /* Menu de Navegação */
 nav input{display: none;}
@@ -269,9 +270,10 @@ width: 100%;
 
 /* screen 768px */
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 1024px){
     #logo{display: none;}
-    #me{display: block;}
+    #me,svg{display: block;}
+    
     #Sobre img{
         margin-right: 0!important;
         width: 300px;
@@ -281,8 +283,8 @@ width: 100%;
         position: absolute;
         text-align: center;
         color: #ffffff;
-        font-size: 300%;
-        width: 100%;    
+        font-size: 250%;
+        width: 90%;    
     }
 
     #Sobre{display: flex;flex-direction: column-reverse; justify-content: space-around;height: 500px;padding-bottom: 0vh;padding-top: 0vh;}
@@ -322,7 +324,7 @@ width: 100%;
         height: 200px;
     }
 
-    #mmm{align-self: flex-end;margin-top: 160%;}
+    #mmm{align-self: flex-end;margin-top: 25%;}
     nav label{display: block;}
     nav ul{
         display: flex;
@@ -334,7 +336,7 @@ width: 100%;
         padding-left: 10px;
         background-color: black;
         margin-top: 883px;
-        padding-bottom: 500px;
+        padding-bottom: 700px;
     }
     #me{background-color: #ffa600;}
     nav ul a{font-size: 0;transition: 0.5s;}
@@ -355,7 +357,8 @@ width: 100%;
 }
     @media only screen and (max-width: 540px){
         nav{width: 100vw;}
-        
+        #mmm{align-self: flex-end;margin-top: 160%;}
+        nav ul{padding-bottom: 503px;}
 
         #galeria img{width: 120px;height: 120px;}
         #galeria{height: 500px;}
@@ -364,24 +367,51 @@ width: 100%;
         flex-direction: column;}
         #serviços #ms{flex-direction: column;width:200px;}
         #sa,#sb,#sc,.ser{display:none;}
-        .ser{position: relative;font-size: x-large}
+        .ser{position: relative;font-size: x-large;}
+        .ser p{font-size: medium;text-align: start;}
+        .ser li{font-size: large;text-align: start;}
         #serviços #sa:checked + #s1,#serviços #sb:checked + #s2,#serviços #sc:checked + #s3{
             width: 0;
-            padding-bottom: 18px;
+            scale: 1;
+            padding-bottom: 0px;
             position: relative;
         }
         #serviços #sa:checked ~ #li1,#serviços #sb:checked ~ #li2,#serviços #sc:checked ~ #li3{
             background-color: black;
             margin-left: 0px;
             padding: 15px;
-            width: 213px;
+            width: 174px;
+            text-align: justify;
         }
         .AT iframe{width: 300px;height:300px;}
-        #contato{height: 650px;}
+        #contato{height: 700px;}
         #Sobre{height: 500px;}
         #Sobre img{width: 200px;height: 200px;}
         #Sobre #bg{height: 250px;}
         .banner h1{font-size: large;width: 90vw;}
         #ms label{width: 0;}
         #ww{width: 80vw;}
+    }
+    @media only screen and (max-width: 280px){
+        *{  font-size: large!important;text-align: center;}
+        .rodapé{flex-direction: column;}
+        #bt,#rd1{margin-left: 15px;}
+        #bt{justify-content: center;}
+        #Sobre{height: 500px;}
+        #Sobre #bg{height: 900px;}
+        #g{width:250px;height: 250px;}
+        #galeria img{width:100px;height: 100px;}
+        .ser li,.ser p{text-align: justify;}
+        .ser li{font-size: large!important;}
+        .ser p{font-size: small!important;}
+        #contato{height: 700px;}
+    }
+    @media (width: 1024px){
+        #contato{height: 950px;}
+        #serviços img{width: 240px;height: 240px;}
+        #serviços li,#serviços p{margin-left: 30px;}
+    }
+    @media (width:1280px){
+        #ww{scale: 1;width: 0;margin-left: 0;}
+        #serviços img{width: 300px;height: 300px;}
     }
